@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+}
+/* footer stick at the bottom of web page */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Titillium Web", sans-serif;
+}
+main {
+  flex: 1 0 auto;
+  margin-top: 83px;
+}
+.row {
+  --bs-gutter-x: 18px;
+}
+
+/* link */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: none;
+}
+
+/* typography */
+p {
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 300;
+  color: var(--black);
+}
+p b,
+p strong {
+  font-weight: 700;
+}
+
+.text-block {
+  margin: 24px 0;
+}
+
+#footer_logo_binaco {
+  max-height: 86px;
+}

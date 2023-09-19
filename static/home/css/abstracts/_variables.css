@@ -1,0 +1,28 @@
+:root {
+	--primary: #006cb5;
+	--primary-hover: #005085;
+    --secondary: #4A5358;
+    --black: #000000;
+    --white: #FFFFFF;
+
+    /* etichette tabelle */
+    --gray-dark: #767676;
+    /* righe tabelle */
+    --gray-medium: #EBEBEB;
+    /* sfondo struttura/percorso parte mappa */
+    --gray-light: #FAFAFA;
+    /* sfondo sezioni homepage */
+    --blue-light: #F7FAFB;
+
+    --heart: #FF487F;
+    --success: #009C4C;
+    --warning: #FA6600;
+    --danger: #E41F12;
+
+    --transition: all 0.3s ease;
+
+    --swiper-theme-color: #006cb5;
+    --swiper-pagination-color: #006cb5;
+
+    --breadcrumb-text-color: #9a9a9a;
+}
