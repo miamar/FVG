@@ -1,0 +1,32 @@
+.link-map {
+    position: fixed;
+    top: 80%;
+    right: 0;
+    z-index: 1001;
+}
+
+.link-map a {    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    border-radius: 0px;
+    border: 0;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    transition: var(--transition);
+}
+
+.button-hero-homepage:hover {
+    background-color: var(--primary-hover);
+}
+
+@media screen and (max-width:750px){
+    .link-map {
+        display: none;
+    }
+}
+

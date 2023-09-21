@@ -5,27 +5,27 @@
 @import "./base/_base.css";
 
 /* components: reusable components */
-@import "./components/_accordion.css";/* PRONACI!! */
+@import "./components/_accordion.css";
 @import "./components/_button.css";
-@import "./components/_card.css"; /* PRONACI!! */
-@import "./components/_document.css";
+@import "./components/_card.css";
+@import "./components/_document.css";/* PRONACI!! */
 @import "./components/_footer.css";
-@import "./components/_gallery.css";
+@import "./components/_gallery.css"; /* PRONACI!! */
 @import "./components/_header.css";
-@import "./components/_information.css";
-@import "./components/_breadcrumb.css";
+@import "./components/_information.css"; /* PRONACI!! */
+@import "./components/_breadcrumb.css"; /* PRONACI!! */
 @import "./components/_link-map.css";
-@import "./components/_pagination.css";
-@import "./components/_select.css";
+@import "./components/_pagination.css";/* PRONACI!! */
+@import "./components/_select.css";/* PRONACI!! */
 
 /* pages: individual pages */
-@import "./pages/_evento.css";
-@import "./pages/_folder-page.css";
+@import "./pages/_evento.css"; /* PRONACI!! */
+@import "./pages/_folder-page.css"; /* PRONACI!! */
 @import "./pages/_home.css";
-@import "./pages/_mappa.css";
-@import "./pages/_percorso-struttura.css";
-@import "./pages/_single-page.css";
-@import "./pages/_area_riservata.css";
+@import "./pages/_mappa.css";/* PRONACI!! */
+@import "./pages/_percorso-struttura.css"; /* PRONACI!! */
+@import "./pages/_single-page.css";/* PRONACI!! */
+@import "./pages/_area_riservata.css";/* PRONACI!! */
 
 /* Errore striscia a sinistra in Home */
 @media screen and (max-width:568px) {

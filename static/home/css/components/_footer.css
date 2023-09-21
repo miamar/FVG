@@ -1,0 +1,84 @@
+.footer {
+	background-color: var(--secondary);
+	color: var(--white);
+	/* footer stick at the bottom of web page */
+	flex-shrink: 0;
+	z-index: 100;
+}
+
+.titleFooter {
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 700;
+	color: var(--white);
+    margin-bottom: 0;
+}
+
+.linkFooters ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+.linkFooters li {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 600;
+	padding: 2px 0;
+}
+.linkFooters a {
+	color: var(--white);
+	text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 2px 0;
+	width: fit-content;
+}
+.linkFooters a:hover {
+	color: var(--white);
+	text-decoration: underline;
+}
+
+.promo-turismo {
+	font-size: 14px;
+	font-weight: 300;
+	padding-bottom: 24px;
+	color: var(--white);
+}
+.promo-turismo span {
+	font-weight: 600;
+}
+
+.first {
+	padding-top: 62px;
+}
+
+.social-icon-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.social-icon-footer a:not(:last-child) {
+    margin-right: 8px;
+}
+.social-icon-footer img {
+    width: 26px;
+    height: 26px;
+}
+
+@media screen and (max-width:750px) {
+
+	.linkFooters .d-flex {
+		flex-direction: column;
+	}
+	
+
+}
+@media screen and (max-width:1200px) {
+
+	.linkFooters ul {
+		margin-right: 30px;
+	}
+	.social-icon-footer {
+		justify-content:flex-start;
+		margin-top: 16px;
+	}
+}
