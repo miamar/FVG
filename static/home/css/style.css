@@ -70,7 +70,7 @@
     left: 0;
     width: 100%;
     height: 400px;
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) -5.83%, rgba(0, 0, 0, 0.79) 99.89%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.70) 99.89%);
 }
 
 .souvenir-logo {
@@ -87,5 +87,40 @@
     font-weight: 600;
     font-size: 1.3rem;
     z-index: 1;
+}
+
+.disabilità {
+    background-color: white!important;
+    padding-top: 140px;
+    margin-bottom: 40px;
+}
+
+.prezzo {
+    position: absolute;
+    top: 1rem; 
+    right: 1rem; 
+    background-color: #266CB0;
+    color: white; 
+    padding: 0.5rem 1rem; 
+    border-radius: 1rem 1rem 1rem 0rem;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2; 
+}
+
+.prezzo p{
+    color: white;
+    margin-bottom: 0;
+    margin-right: 0.25rem;
+
+}
+
+.prezzo span{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.homepage .esperienze {
+    padding-bottom: 80px;
 }
 
