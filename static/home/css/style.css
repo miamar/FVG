@@ -39,7 +39,54 @@
     }    
 }
 
-/* Nuovo */
+/* Nuove modifiche */
+.disabilità, .offerte {
+    padding-top: 140px;
+    padding-bottom: 40px;
+}
+
+.disabilità {
+    background-color: white!important;
+}
+
+.prezzo {
+    position: absolute;
+    top: 1rem; 
+    right: 1rem; 
+    background-color: #266CB0;
+    color: white; 
+    padding: 0.5rem 1rem; 
+    border-radius: 1rem 1rem 1rem 0rem;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2; 
+}
+
+.prezzo p{
+    color: white;
+    margin-bottom: 0;
+    margin-right: 0.25rem;
+
+}
+
+.prezzo span{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.homepage .esperienze {
+    padding-bottom: 80px;
+}
+
+.offerte .card-container {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.offerte .card-image{
+    border-radius: 25px 25px 0 0;
+}
+
 .souvenir h2 {
     color: var(--primary);
 }
@@ -88,39 +135,3 @@
     font-size: 1.3rem;
     z-index: 1;
 }
-
-.disabilità {
-    background-color: white!important;
-    padding-top: 140px;
-    margin-bottom: 40px;
-}
-
-.prezzo {
-    position: absolute;
-    top: 1rem; 
-    right: 1rem; 
-    background-color: #266CB0;
-    color: white; 
-    padding: 0.5rem 1rem; 
-    border-radius: 1rem 1rem 1rem 0rem;
-    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
-    z-index: 2; 
-}
-
-.prezzo p{
-    color: white;
-    margin-bottom: 0;
-    margin-right: 0.25rem;
-
-}
-
-.prezzo span{
-    font-size: 1.5rem;
-    font-weight: 700;
-
-}
-
-.homepage .esperienze {
-    padding-bottom: 80px;
-}
-
