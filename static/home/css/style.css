@@ -81,10 +81,17 @@
 .offerte .card-container {
     background-color: white;
     border-radius: 25px;
+    padding-bottom: 0.5rem;
 }
 
 .offerte .card-image{
     border-radius: 25px 25px 0 0;
+}
+
+.offerte .data {
+    color: #266CB0;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .souvenir h2 {
@@ -135,3 +142,4 @@
     font-size: 1.3rem;
     z-index: 1;
 }
+  
