@@ -45,7 +45,47 @@
 }
 
 .souvenir {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+
+.swiper.mySwiperSouvenir {
+    width: 100%;
+    height: 100%;
+  }
+
+.card-souvenir {
+    border-radius: 25px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.card-souvenir .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) -5.83%, rgba(0, 0, 0, 0.79) 99.89%);
+}
+
+.souvenir-logo {
+    height: 50px;
+    min-width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #eef1f7;
+    z-index: 1;
+}
+
+.souvenir-nome {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    z-index: 1;
 }
 

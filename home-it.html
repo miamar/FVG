@@ -882,13 +882,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="container-fluid souvenir">
             <div class="container">
-                <div class="row">
-                    <div class="col-6">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12">
                         <h2>Souvenir solidari</h2>
                         <h4 class="mt-4">Scarica tutte le nostre associazioni che vendono prodotti</h4>
                         <p class="mt-2">Prrodotti realizzati da associazioni o organizzazioni a sostegno delle disabilità. Grazie all’acquisto è possibile costruire una comunità più equa, responsabile e solidale.</p>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-12">
+                        <div class="swiper mySwiperSouvenir">
+                            <div class="swiper-wrapper">
+
+                              <div class="swiper-slide">
+                                <div class="card-souvenir p-3 mb-5" style="background-image: url(/media/images/associazione1.png);">
+                                    <div class="gradient-overlay "></div>
+                                    <div class="d-flex align-items-end w-100 h-100">
+                                        <div class="souvenir-container d-flex align-items-center">
+
+                                            <img class="souvenir-logo" src="/media/images/logo-piccoloprincipe.png">
+                                            
+                                            <div class="souvenir-nome px-3">
+                                                Nome dell’associazione
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                              </div>
+
+                              <div class="swiper-slide">Slide 2</div>
+                              <div class="swiper-slide">Slide 3</div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
     
                     </div>
                 </div>
@@ -1270,6 +1297,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	}
 
 	(document, "script", "EmbedSocialHashtagScript")); 
+
+    //swiper Souvenir
+    var swiperSouvenir = new Swiper(".mySwiperSouvenir", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
     </script>
 
     </body>
