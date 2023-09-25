@@ -266,8 +266,80 @@
 .btn-white:hover, .btn-white:focus {
     opacity: 0.9;
     border-radius: 1px solid white;
+    color: aquamarine;
 }
 
 .btn-white:hover i, .btn-white:focus i {
     transform: translateX(4px);
+}
+
+/* Accordion - dettagli dell'offerta */
+.accordion {
+    --bs-accordion-border-width: 0px;
+    --bs-accordion-btn-icon-width: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+}
+
+.accordion-button {
+    color: #767676;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.2rem 0;
+    border-top: 1.5px solid #EBEBEB;
+}
+
+.accordion-button:focus {
+    border-top: 1.5px solid #EBEBEB;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #767676;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 0px;
+}
+
+.accordion-body {
+    padding: 0;
+    padding-bottom: 1rem;
+}
+
+.accordion-item:last-of-type {
+    border-bottom: 1.5px solid #EBEBEB;
+}
+
+.accordion .bullet-list li {
+    color: #181818;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem; 
+}
+
+.accordion .bullet-list p {
+    margin-bottom: 0; 
+    color: #181818;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.accordion .contatti {
+    display: inline-flex;
+    align-items: center;
+}
+
+/**/
+.accordion .contatti i {
+    font-size: 26px;
+    margin-left: 5px;
 }
