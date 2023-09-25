@@ -1,0 +1,471 @@
+.struttura-percorso-container-p p {
+    margin: 0;
+  }
+  
+  .hero-percorso-struttura {
+    background-repeat: no-repeat;
+    height: 620px;
+    box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.4);
+    margin-bottom: 70px;
+    background-size: cover;
+  }
+  
+  .titoloStruttura {
+    padding-top: 200px;
+  }
+  
+  .titoloStruttura p {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 56px;
+    letter-spacing: -1.8px;
+  }
+  
+  .titoloStruttura div {
+    color: var(--white);
+    font-weight: lighter;
+    font-size: 22px;
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+  }
+  
+  .margin-topclass {
+    margin-top: 60px;
+  }
+  
+  .row-bottom-hero {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .white-border {
+    background-color: var(--white);
+    width: fit-content;
+    height: 50px;
+    border-radius: 50px;
+    padding: 10px 30px 10px 30px;
+    color: var(--secondary);
+    margin-right: 8px;
+    font-size: 20px;
+    margin-right: 10px;
+    text-transform: uppercase;
+  }
+  
+  .where-tag {
+    color: var(--primary);
+  
+    font-weight: bold;
+  }
+  
+  .icona-cuore {
+    color: var(--heart);
+    background-color: #ffffff;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  .white-border img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .white-border i {
+    margin-right: 10px;
+    color: var(--success);
+    font-size: 30px;
+  }
+  
+  .likes-struttura {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-likes {
+    border: unset;
+    background-color: unset;
+  }
+  
+  .sopra-likes {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+  
+  .sotto-likes {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.1;
+  }
+  
+  .numero-struttura {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .numero-struttura + p {
+    margin: 0;
+  }
+  
+  .tab-informazioni-percorsi {
+    border-bottom: 1px solid var(--primary);
+    display: flex;
+  }
+  
+  .button-tab-percorsi {
+    border: 1px solid var(--primary) !important;
+    padding: 16px;
+    color: var(--primary) !important;
+    border-radius: 0 !important;
+  }
+  
+  .button-tab-percorsi.active {
+    color: white !important;
+    background-color: var(--primary) !important;
+  }
+  
+  .nav-item-percorsi {
+    bottom: -1px;
+    position: relative;
+    padding-bottom: 0px;
+  }
+  
+  .step {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+  }
+  
+  .step,
+  .accordion-numero-struttura {
+    border-color: orange;
+    color: orange;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .accordion-numero-struttura {
+    margin-left: 20px;
+  }
+  
+  .tab-content {
+    counter-reset: section;
+  }
+  
+  .accordion-numero-struttura:before {
+    counter-increment: section;
+    content: counter(section);
+    width: 32px;
+    height: 32px;
+    display: block;
+    float: left;
+    margin-left: -1em;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-right: 1em;
+  }
+  
+  .voto-accessibilita {
+    margin-right: 10px;
+    color: var(--success);
+    font-size: 30px;
+  }
+  
+  .title-info-struttura {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .info-box-percorso-titolo {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-top: 15px;
+  }
+  
+  .info-box-percorso-titoletto {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--gray-dark);
+    width: 150px;
+  }
+  
+  .info-box-percorso-sottotitoletto {
+    font-size: 13px;
+    font-weight: light;
+    line-height: 1;
+    color: var(--gray-dark);
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .structure_list li {
+    list-style-type: disc !important;
+  }
+  
+  .accordion-item h5.info-box-percorso-titoletto {
+    margin-bottom: 0;
+  }
+  
+  .accordion_field {
+    line-height: 0;
+  }
+  
+  .accordion_field-padding-left {
+    padding-left: 20px;
+  }
+  
+  ul li .accordion_field-padding-left {
+    padding-left: 0px;
+  }
+  
+  .accordion-item p.value {
+    margin-left: 2rem;
+  }
+  
+  .info-box-percorso-descrizione {
+    font-size: 13px;
+    font-weight: light;
+    line-height: 1;
+    padding-left: 0.5rem;
+  }
+  
+  ul li .info-box-percorso-descrizione {
+    padding-left: 0em;
+  }
+  
+  .list-class-percorso ul {
+    list-style: none;
+    margin: 0;
+  }
+  .list-class-percorso hr {
+    color: #7c7c7c;
+  }
+  .padding-class li {
+    list-style: none;
+    margin: 0;
+  }
+  
+  .content-info-struttura {
+    counter-reset: section;
+    width: 50%;
+    padding: 20px 20px 0 20px;
+    background-color: var(--gray-light);
+  }
+  
+  .info-suite-struttura img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .info-suite-struttura p {
+    margin-bottom: 0px;
+  }
+  
+  .info-box-percorso-titoletto {
+    text-transform: uppercase;
+  }
+  
+  .scrollbar-strutture {
+    height: 55rem;
+    overflow-y: scroll;
+  }
+  
+  .scrollbar-strutture::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .map-info-didascalia-foto {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #7c7c7c;
+  }
+  
+  .button-map {
+    -webkit-appearance: none;
+    padding: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 50%);
+  }
+  
+  .button-map p {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    margin: 0px;
+  }
+  
+  .button-map.active p {
+    color: var(--primary) !important;
+  }
+  
+  .strutture-mappa-info {
+    display: flex;
+  }
+  
+  .percorsi-informazioni {
+    width: 50%;
+    padding: 20px;
+    background-color: #fafafa;
+  }
+  /*Struttura List Page*/
+  .struttura-list-page {
+    width: 100%;
+  }
+  
+  .struttura-list-page .tag-container {
+    margin-right: 5px;
+  }
+  
+  .button-strutture-list-filter {
+    background-color: var(--primary);
+    border-radius: 0px;
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 34px;
+    margin-top: 36px;
+    transition: var(--transition);
+    color: white;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 750px) {
+    .hero-percorso-struttura {
+      position: relative;
+    }
+    .hero-percorso-struttura .container {
+      max-width: unset;
+    }
+    .struttura-percorso-container-p {
+      padding-top: 0 !important;
+      position: absolute;
+      bottom: 20px;
+    }
+    .struttura-likes-icon {
+      position: absolute;
+      top: -530px;
+      right: 20px;
+    }
+    .hero-voto-absolute {
+      position: absolute;
+      right: 10px;
+    }
+    .titoloStruttura p {
+      font-size: 45px;
+    }
+    .strutture-mappa-info {
+      flex-direction: column;
+    }
+    .map-strutture-percorsi {
+      width: 100%;
+      height: 300px;
+    }
+    .content-info-struttura {
+      width: 100%;
+    }
+    .scrollbar-strutture {
+      height: fit-content !important;
+    }
+    .percorsi-informazioni {
+      width: 100%;
+    }
+    .button-tab-percorsi {
+      font-size: 14px;
+      padding: 12px;
+    }
+    .tab-content p {
+      font-size: 18px;
+    }
+    .tab-content span {
+      font-size: 18px !important;
+      font-family: "Titillium Web", sans-serif;
+    }
+    .white-border {
+      padding: 8px 24px 8px 24px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .strutture-list-range-filter {
+      width: 50vh;
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .strutture-list-range-filter {
+      width: 50vh;
+      max-width: 100%;
+      margin-top: 30px;
+    }
+  
+    .struttura-list-page {
+      flex-direction: column;
+    }
+    .wrap-responsive {
+      flex-wrap: wrap;
+    }
+    .wrap-responsive .tag-container {
+      margin: auto;
+      margin-top: 10px;
+      padding-right: 5px;
+    }
+  }
+  
+  .structure_module_images a {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: calc(100% - 1rem);
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #d8d8d8;
+  }
+  
+  .structure_module_images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .strutture-list-range-filter {
+      width: 100%;
+    }
+  }
+  
+  .strutture-mappa-info .leaflet-popup-content {
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 300;
+    font-family: "Titillium Web", sans-serif;
+  }
+  
+  .selected_trait {
+    border-left: 0.75rem solid var(--primary);
+    padding-left: 2rem;
+    transition: border-left-width 0.25s linear;
+  }
+  
