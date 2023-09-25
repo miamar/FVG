@@ -1,0 +1,30 @@
+.folder-page {
+    height: 100%;
+}
+
+.folder-page h1 {
+    font-size: 56px;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -1.8px;
+    color: var(--secondary);
+}
+.folder-page .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.folder-page img {
+    margin-right: 8px;
+}
+
+.folder-list-item-container {
+    background-color: var(--blue-light);
+    padding: 80px 0;
+    height: 100%;
+}
+
+.pagination {
+	justify-content: center;
+}

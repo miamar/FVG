@@ -20,7 +20,6 @@
 
 /* pages: individual pages */
 @import "./pages/_evento.css"; /* PRONACI!! */
-@import "./pages/_folder-page.css"; /* PRONACI!! */
 @import "./pages/_home.css";
 @import "./pages/_mappa.css";/* PRONACI!! */
 @import "./pages/_percorso-struttura.css"; /* PRONACI!! */
@@ -39,7 +38,7 @@
     }    
 }
 
-/* Nuove modifiche */
+/* NUOVE MODIFICHE */
 .disabilità, .offerte {
     padding-top: 140px;
     padding-bottom: 40px;
@@ -78,10 +77,11 @@
     padding-bottom: 80px;
 }
 
+/* Offerte/pachetii cards */
 .offerte .card-container {
     background-color: white;
     border-radius: 25px;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .offerte .card-image{
@@ -94,6 +94,55 @@
     font-weight: 700;
 }
 
+.offerte .descrizione {
+    display: none;
+}
+
+.offerte .btn-custom {
+    display: none;
+}
+
+.offerte .data,
+.offerte .descrizione,
+.offerte .card-title,
+.offerte .details-container,
+.offerte .btn-custom {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Offerte/pachetii - card hover */
+.offerte .card-container:hover {
+    cursor: pointer;
+}
+
+.offerte .card-container:hover img{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.offerte .card-container:hover .card-image {
+    height: 150px;
+}
+
+.offerte .card-container:hover .data,
+.offerte .card-container:hover .details-container {
+    display: none;
+}
+
+.offerte .card-container:hover .card-title {
+    text-decoration: none;
+    color: #1c2024;
+}
+
+.offerte .card-container:hover .descrizione {
+    display: unset;
+}
+
+.offerte .card-container:hover  .btn-custom  {
+    display: inline-flex;
+}
+  
+/* Souvenir solidari - associazioni o organizzazioni */
 .souvenir h2 {
     color: var(--primary);
 }
@@ -142,4 +191,3 @@
     font-size: 1.3rem;
     z-index: 1;
 }
-  
