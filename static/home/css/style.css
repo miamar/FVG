@@ -229,29 +229,43 @@
 }
 
 /* Galleria */
-.offerta .gallery {
-    position: relative
+.offerta .galleria {
+    position: relative;
 }
 
-.offerta .gallery img {
+.offerta .galleria img,
+.offerta .struttura img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     object-position: center center;
 }
 
+.offerta .galleria .col-7 img {
+    height: 30rem;
+}
 
+.offerta .galleria .col-5 img {
+    height: 14.5rem;
+}
 
-.offerta .gallery i {
+.offerta .galleria i {
     font-size: 16px;
     margin-left: 6px;
     transition: var(--transition);
 }
 
-.offerta .gallery a {
+.offerta .galleria a {
     position: absolute;
     right: 2.2rem;
     bottom: 1.5rem;
+}
+
+.offerta .galleria .col-7 {
+    padding-right: -1rem!important;
+}
+
+.offerta .galleria .col-5 {
+    padding-left: 0.5rem;
 }
 
 /* Bottone bianco */
@@ -266,7 +280,6 @@
 .btn-white:hover, .btn-white:focus {
     opacity: 0.9;
     border-radius: 1px solid white;
-    color: aquamarine;
 }
 
 .btn-white:hover i, .btn-white:focus i {
@@ -334,12 +347,79 @@
 }
 
 .accordion .contatti {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-/**/
-.accordion .contatti i {
+.accordion .contatti-item {
+    display: inline-flex;
+    align-items: center;
+    color: #266CB0;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.accordion .contatti-item i {
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+
+
+/* truttura che offre questa offerta */
+.offerta .struttura img {
+    height: 15rem;
+}
+
+.offerta .struttura h3 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #1c2024;
+}
+
+.offerta .struttura .indice-accessibilita {
+    display: flex;
+    align-items: center;
+    margin: 13px 0;
+    line-height: 30px;
+}
+
+.offerta .struttura .indice-accessibilita i {
+    color: var(--success);
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.offerta .struttura .indice-accessibilita .indice {
     font-size: 26px;
-    margin-left: 5px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.offerta .struttura .indice-accessibilita .totale {
+    font-size: 18px;
+    font-weight: 300;
+    font-variant: sub;
+    letter-spacing: 1.5px;
+}
+
+.offerta .struttura .category {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid var(--primary);
+    border-radius: 40px;
+    padding: 3px 18px 3px 14px;
+    margin-top: 26px;
+    width: fit-content;
+    transition: var(--transition);
+}
+
+.offerta .struttura .category img {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
 }
