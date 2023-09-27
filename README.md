@@ -13,7 +13,7 @@ Associazioni:
 - souvenir-tutti.html 
 
 ## CSS
-COMPONENTS:
+**COMPONENTS:**
 - _card.css
 - _information.css
 - _button.css
@@ -21,7 +21,7 @@ COMPONENTS:
 Nuovo file
 - _galleria.css
 
-PAGES:
+**PAGES:**
 - _home.css
 
 Nuovo file:
