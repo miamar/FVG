@@ -51,6 +51,10 @@
     width: fit-content;
 }
 
+.btn-white:hover {
+    cursor: pointer;
+}
+
 .btn-white:hover, .btn-white:focus {
     opacity: 0.9;
     border-radius: 1px solid var(--white);

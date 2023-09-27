@@ -28,3 +28,7 @@ Nuovo file:
 
 ## JS
 - _home.html -> swiper Souvenir
+- _offerta.html -> modal
+
+## Immagini
+ho messo tutte le immagini che ho usato come esempi nella cartella media->images (sono solo esempi, il cliente le modifica)
