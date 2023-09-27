@@ -44,7 +44,8 @@
     padding-bottom: 80px;
 }
 
-.disabilità, .offerte {
+.disabilità, 
+.offerte {
     padding-top: 140px;
     padding-bottom: 40px;
 }
@@ -219,8 +220,13 @@
 }
 
 /* PAGINA OFFERTA */
+.titleInfo {
+    text-transform: uppercase;
+}
+
 .offerta,
-.souvenir-tutti {
+.souvenir-tutti,
+.souvenir-singolo {
     margin: 50px 0;
 }
 
@@ -230,7 +236,8 @@
 }
 
 .offerta .title h1,
-.title-center h1 {
+.title-center h1,
+.souvenir-singolo h1 {
     color: var(--secondary);
     font-size: 56px;
     line-height: 1.25;
@@ -256,33 +263,34 @@
 }
 
 /* Galleria */
-.offerta .galleria {
+.galleria {
     position: relative;
 }
 
-.offerta .galleria img,
-.offerta .struttura img,
+.galleria img,
+.struttura img,
 .card-souvenir-tutti img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center center;
 }
 
-.offerta .galleria .col-md-7 img {
+.galleria .col-md-7 img {
     height: 30rem;
 }
 
-.offerta .galleria .col-md-5 img {
+.galleria .col-md-5 img {
     height: 14.5rem;
 }
 
-.offerta .galleria i {
+.galleria i {
     font-size: 16px;
     margin-left: 6px;
     transition: var(--transition);
 }
 
-.offerta .galleria a {
+.galleria a {
     position: absolute;
     right: 2.2rem;
     bottom: 1.5rem;
@@ -352,26 +360,26 @@
     border-bottom: 1.5px solid #EBEBEB;
 }
 
-.accordion .bullet-list li {
+.bullet-list li {
     color: #181818;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75rem; 
 }
 
-.accordion .bullet-list p {
+.bullet-list p {
     margin-bottom: 0; 
     color: #181818;
     font-size: 1rem;
     font-weight: 600;
 }
 
-.accordion .contatti {
+.contatti {
     display: flex;
     flex-direction: column;
 }
 
-.accordion .contatti-item {
+.contatti-item {
     display: inline-flex;
     align-items: center;
     color: #266CB0;
@@ -382,7 +390,7 @@
     margin-bottom: 1rem;
 }
 
-.accordion .contatti-item i {
+.contatti-item i {
     font-size: 1.4rem;
     margin-right: 5px;
 }
@@ -494,9 +502,6 @@
 
   .card-souvenir-tutti {
     height: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     position: relative;
     margin: 0.5rem;
@@ -521,7 +526,7 @@
     display: none;
 }
 
-/* Button - white text */
+/* Bottone - testo bianco */
 .card-souvenir-tutti .souvenir-container .btn-text {
     color: var(--white);
     display: none!important;
@@ -531,7 +536,7 @@
     font-size: 20px;
 }
 
-/* Card hover*/
+/* Card hover */
 .card-souvenir-tutti:hover .souvenir-container p,
 .card-souvenir-tutti:hover .souvenir-container .btn-text {
     display: inline-flex!important;
@@ -548,6 +553,9 @@
 .card-souvenir-tutti:hover .gradient-overlay {
     background: linear-gradient(181deg, rgba(217, 217, 217, 0.00) 1%, rgba(0, 0, 0, 0.79) 75%);
 }
+
+ /* PAGINA ASSOCIAZIONE -SINGOLA */
+
 
 
 
