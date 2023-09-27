@@ -4,7 +4,9 @@
 
 ## HTML (templates)
 - home.html
-- oferta.html (offerta, esperienza singola)  
+- offerta.html (offerta, esperienza singola)  
+- souvenir-tutti.html
+- souvenir-singolo.html  (Aspetto conferma dal cliente quale dei due layout vuole)
 
 Associazioni:
 - souvenir-singolo.html 
