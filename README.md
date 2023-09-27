@@ -25,3 +25,6 @@ Nuovo file:
 Nuovo file:
 - _offerta.css
 - _souvenir.css
+
+## JS
+- _home.html -> swiper Souvenir
