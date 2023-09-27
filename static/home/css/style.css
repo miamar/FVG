@@ -58,7 +58,7 @@
     top: 1rem; 
     right: 1rem; 
     background-color: #266CB0;
-    color: white; 
+    color: var(--white);
     padding: 0.5rem 1rem; 
     border-radius: 1rem 1rem 1rem 0rem;
     box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
@@ -67,7 +67,7 @@
 
 .prezzo p,
 .prezzo-secondo p {
-    color: white;
+    color: var(--white);
     margin-bottom: 0;
     margin-right: 0.25rem;
 
@@ -82,7 +82,7 @@
 
 /* Offerte/pachetii cards */
 .offerte .card-container {
-    background-color: white;
+    background-color: var(--white);
     border-radius: 25px;
     padding-bottom: 1rem;
 }
@@ -167,16 +167,25 @@
     overflow: hidden;
     background-size: cover; 
     background-repeat: no-repeat;
-    position: relative;
+    position: relative; 
 }
 
-.card-souvenir .gradient-overlay {
+.card-souvenir a {
+    display: flex;
+    justify-content: end;
+}
+
+.gradient-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 400px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.70) 99.89%);
+    height: 100%;
+    background: linear-gradient(179deg, rgba(217, 217, 217, 0.00) 30%, rgba(0, 0, 0, 0.79) 94.51%)
+}
+
+.card-souvenir:hover .gradient-overlay {
+    background: linear-gradient(179deg, rgba(217, 217, 217, 0.00) 20%, rgba(0, 0, 0, 0.79) 90.51%)
 }
 
 .souvenir-logo {
@@ -188,15 +197,30 @@
     z-index: 1;
 }
 
+.souvenir-container {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
 .souvenir-nome {
-    color: white;
+    color: var(--white);
     font-weight: 600;
     font-size: 1.3rem;
     z-index: 1;
 }
 
+.card-souvenir a {
+    cursor: pointer;
+ }
+
+.card-souvenir a:hover .souvenir-nome {
+   opacity: 0.8;
+}
+
 /* PAGINA OFFERTA */
-.offerta {
+.offerta,
+.souvenir-tutti {
     margin: 50px 0;
 }
 
@@ -205,7 +229,8 @@
     justify-content: space-between;
 }
 
-.offerta .title h1 {
+.offerta .title h1,
+.title-center h1 {
     color: var(--secondary);
     font-size: 56px;
     line-height: 1.25;
@@ -236,7 +261,8 @@
 }
 
 .offerta .galleria img,
-.offerta .struttura img {
+.offerta .struttura img,
+.card-souvenir-tutti img {
     width: 100%;
     object-fit: cover;
     object-position: center center;
@@ -273,7 +299,7 @@
 
 .btn-white:hover, .btn-white:focus {
     opacity: 0.9;
-    border-radius: 1px solid white;
+    border-radius: 1px solid var(--white);
 }
 
 .btn-white:hover i, .btn-white:focus i {
@@ -322,7 +348,7 @@
     padding-bottom: 1rem;
 }
 
-.accordion-item:last-of-type {
+.accordion .accordion-item:last-of-type {
     border-bottom: 1.5px solid #EBEBEB;
 }
 
@@ -428,7 +454,6 @@
 }
 
 
-
 @media screen and (max-width: 767px) {
     .offerta .galleria .col-md-7 img {
         height: 20rem;
@@ -446,6 +471,10 @@
         display: flex;
         align-items: center;
     }
+
+    .title-center p {
+        width: 100%!important;
+      }
   }
 
   @media screen and (min-width: 768px) {
@@ -454,3 +483,71 @@
         display: none;
     }
   }
+
+  /* PAGINA ASSOCIAZIONI - TUTTE */
+  .title-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-souvenir-tutti {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-souvenir-tutti .gradient-overlay {
+    background: linear-gradient(179deg, rgba(217, 217, 217, 0.00) 30%, rgba(0, 0, 0, 0.79) 94.51%)
+}
+
+.card-souvenir-tutti .souvenir-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    margin-right: 1rem;
+}
+
+.card-souvenir-tutti .souvenir-container p {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 300;
+    display: none;
+}
+
+/* Button - white text */
+.card-souvenir-tutti .souvenir-container .btn-text {
+    color: var(--white);
+    display: none!important;
+}
+
+.card-souvenir-tutti .souvenir-container .btn-text i {
+    font-size: 20px;
+}
+
+/* Card hover*/
+.card-souvenir-tutti:hover .souvenir-container p,
+.card-souvenir-tutti:hover .souvenir-container .btn-text {
+    display: inline-flex!important;
+}
+
+.card-souvenir-tutti .souvenir-container .btn-text:hover i {
+    transform: translateX(4px);
+}
+
+.card-souvenir-tutti .souvenir-container .btn-text:hover {
+    opacity: 0.8;
+}
+
+.card-souvenir-tutti:hover .gradient-overlay {
+    background: linear-gradient(181deg, rgba(217, 217, 217, 0.00) 1%, rgba(0, 0, 0, 0.79) 75%);
+}
+
+
+
