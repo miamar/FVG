@@ -5,12 +5,10 @@
 ## HTML (templates)
 - home.html
 - offerta.html (offerta, esperienza singola)  
-- souvenir-tutti.html
-- souvenir-singolo.html  (Aspetto conferma dal cliente quale dei due layout vuole)
 
 Associazioni:
-- souvenir-singolo.html 
 - souvenir-tutti.html 
+- souvenir-singolo.html (Aspetto conferma dal cliente quale dei due layout vuole)
 
 ## CSS
 **COMPONENTS:**
@@ -18,7 +16,7 @@ Associazioni:
 - _information.css
 - _button.css
 
-Nuovo file
+Nuovo file:
 - _galleria.css
 
 **PAGES:**
