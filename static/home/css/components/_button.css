@@ -41,3 +41,21 @@
 .btn-fill:hover i, .btn-fill:focus i {
     transform: translateX(4px);
 }
+
+/* Bottone bianco */
+.btn-white {
+    letter-spacing: 0.28px;
+    padding: 12px 24px;
+    background-color: var(--white);
+    color: var(--primary);
+    width: fit-content;
+}
+
+.btn-white:hover, .btn-white:focus {
+    opacity: 0.9;
+    border-radius: 1px solid var(--white);
+}
+
+.btn-white:hover i, .btn-white:focus i {
+    transform: translateX(4px);
+}

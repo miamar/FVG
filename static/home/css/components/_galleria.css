@@ -1,0 +1,49 @@
+/* Galleria */
+.galleria {
+    position: relative;
+}
+
+.galleria img,
+.struttura img,
+.card-souvenir-tutti img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.galleria .col-md-7 img {
+    height: 30rem;
+}
+
+.galleria .col-md-5 img {
+    height: 14.5rem;
+}
+
+.galleria i {
+    font-size: 16px;
+    margin-left: 6px;
+    transition: var(--transition);
+}
+
+.galleria a {
+    position: absolute;
+    right: 2.2rem;
+    bottom: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+
+    .galleria a {
+        right: 1.2rem;
+    }
+
+    .galleria .col-md-7 img {
+        height: 20rem;
+    }
+    
+    .galleria .col-md-5 img {
+        display: none;
+    }
+    
+  }

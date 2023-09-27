@@ -209,4 +209,178 @@
       flex-wrap: wrap;
     }
   }
+
+  
+  /* NUOVO */
+  /* Offerte/pachetii cards */
+.offerte .card-container {
+  background-color: var(--white);
+  border-radius: 25px;
+  padding-bottom: 1rem;
+}
+
+.offerte .card-image{
+  border-radius: 25px 25px 0 0;
+}
+
+.offerte .data {
+  color: #266CB0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.offerte .descrizione {
+  display: none;
+}
+
+.offerte .btn-custom {
+  display: none;
+}
+
+.offerte .data,
+.offerte .descrizione,
+.offerte .card-title,
+.offerte .details-container,
+.offerte .btn-custom {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Offerte/pachetii - card hover */
+.offerte .card-container:hover {
+  cursor: pointer;
+}
+
+.offerte .card-container:hover img{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.offerte .card-container:hover .card-image {
+  height: 150px;
+}
+
+.offerte .card-container:hover .data,
+.offerte .card-container:hover .details-container {
+  display: none;
+}
+
+.offerte .card-container:hover .card-title {
+  text-decoration: none;
+  color: #1c2024;
+}
+
+.offerte .card-container:hover .descrizione {
+  display: unset;
+}
+
+.offerte .card-container:hover  .btn-custom  {
+  display: inline-flex;
+}
+
+.card-souvenir {
+  border-radius: 25px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
+.card-souvenir a {
+  display: flex;
+  justify-content: end;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(179deg, rgba(217, 217, 217, 0.00) 30%, rgba(0, 0, 0, 0.79) 94.51%)
+}
+
+/* Souvenir solidari - associazioni o organizzazioni */
+.card-souvenir:hover .gradient-overlay {
+  background: linear-gradient(179deg, rgba(217, 217, 217, 0.00) 20%, rgba(0, 0, 0, 0.79) 90.51%)
+}
+
+.souvenir-logo {
+  height: 50px;
+  min-width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #eef1f7;
+  z-index: 1;
+}
+
+.souvenir-container {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.souvenir-nome {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.3rem;
+  z-index: 1;
+}
+
+.card-souvenir a {
+  cursor: pointer;
+}
+
+.card-souvenir a:hover .souvenir-nome {
+ opacity: 0.8;
+}
+
+/* PAGINA ASSOCIAZIONI - TUTTE */
+
+.card-souvenir-tutti .gradient-overlay {
+  background: linear-gradient(179deg, rgba(217, 217, 217, 0.00) 30%, rgba(0, 0, 0, 0.79) 94.51%)
+}
+
+.card-souvenir-tutti .souvenir-container {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  margin-right: 1rem;
+}
+
+.card-souvenir-tutti .souvenir-container p {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 300;
+  display: none;
+}
+
+/* Bottone - testo bianco */
+.card-souvenir-tutti .souvenir-container .btn-text {
+  color: var(--white);
+  display: none!important;
+}
+
+.card-souvenir-tutti .souvenir-container .btn-text i {
+  font-size: 20px;
+}
+
+/* Card hover */
+.card-souvenir-tutti:hover .souvenir-container p,
+.card-souvenir-tutti:hover .souvenir-container .btn-text {
+  display: inline-flex!important;
+}
+
+.card-souvenir-tutti .souvenir-container .btn-text:hover i {
+  transform: translateX(4px);
+}
+
+.card-souvenir-tutti .souvenir-container .btn-text:hover {
+  opacity: 0.8;
+}
+
+.card-souvenir-tutti:hover .gradient-overlay {
+  background: linear-gradient(181deg, rgba(217, 217, 217, 0.00) 1%, rgba(0, 0, 0, 0.79) 75%);
+}
   

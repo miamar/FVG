@@ -721,4 +721,62 @@
       font-size: 18px !important;
     }
   }
+
+/* NUOVO */
+.homepage .esperienze {
+  padding-bottom: 80px;
+}
+
+.disabilità, 
+.offerte {
+    padding-top: 140px;
+    padding-bottom: 40px;
+}
+
+.disabilità {
+    background-color: white!important;
+}
+
+.prezzo {
+    position: absolute;
+    top: 1rem; 
+    right: 1rem; 
+    background-color: #266CB0;
+    color: var(--white);
+    padding: 0.5rem 1rem; 
+    border-radius: 1rem 1rem 1rem 0rem;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2; 
+}
+
+.prezzo p,
+.prezzo-secondo p {
+    color: var(--white);
+    margin-bottom: 0;
+    margin-right: 0.25rem;
+
+}
+
+.prezzo span,
+.prezzo-secondo span {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+/* Souvenir solidari - associazioni o organizzazioni */
+.souvenir h2 {
+  color: var(--primary);
+}
+
+.souvenir {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+.swiper.mySwiperSouvenir {
+  width: 100%;
+  height: 100%;
+}
+
   
