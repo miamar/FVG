@@ -24,4 +24,4 @@ Nuovo file:
 
 Nuovo file:
 - _offerta.css
-- _soucenir.css
+- _souvenir.css
