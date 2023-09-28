@@ -410,7 +410,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <img src="/media/images/associazione3.jpeg">
                     </div>
                 </div>
-                <a href="" class="btn-custom btn-white">Vedi tutte<i class="ph-caret-right-bold"></i></a>
+                <a class="btn-custom btn-white" id="openModalGallery">Vedi tutte le foto<i class="ph-caret-right-bold"></i></a>
+
+                <!-- Modal Gallery -->
+                <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <i class="ph-x" data-bs-dismiss="modal" aria-label="Close"></i>
+                            <div class="swiper mySwiperGallery">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/media/images/grado.png"></div>
+                                  <div class="swiper-slide"><img src="/media/images/grado2.png"></div>
+                                  <div class="swiper-slide"><img src="/media/images/grado3.png"></div>
+                                  <div class="swiper-slide"><img src="/media/images/cividale.png"></div>
+                                  <div class="swiper-slide"><img src="/media/images/example.jpg"></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
     
             </div>
         </div>
@@ -698,6 +719,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+        // JavaScript to open the gallery modal when the link is clicked
+        document.getElementById('openModalGallery').addEventListener('click', function() {
+            var myModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+            myModal.show();
+        });
+
+        var swiper = new Swiper(".mySwiperGallery", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+             navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
 
     </script>
 
