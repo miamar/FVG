@@ -50,7 +50,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+    
     </head>
     <body class="template-homepage">
         
@@ -420,8 +420,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <!--Swiper code goes here -->
+                            <i class="ph-x" data-bs-dismiss="modal" aria-label="Close"></i>
+                            <div class="swiper mySwiperGallery">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/media/images/grado.png"></div>
+                                  <div class="swiper-slide"><img src="/media/images/grado2.png"></div>
+                                  <div class="swiper-slide"><img src="/media/images/grado3.png"></div>
+                                  <div class="swiper-slide"><img src="/media/images/cividale.png"></div>
+                                  <div class="swiper-slide"><img src="/media/images/example.jpg"></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                              </div>
                         </div>
                       </div>
                 </div>
@@ -823,6 +834,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         document.getElementById('openModalGallery').addEventListener('click', function() {
             var myModal = new bootstrap.Modal(document.getElementById('galleryModal'));
             myModal.show();
+        });
+
+        var swiper = new Swiper(".mySwiperGallery", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+             navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
 
     </script>
